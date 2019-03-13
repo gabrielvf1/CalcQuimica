@@ -239,9 +239,5 @@ def equation():
     
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     app.run(host='0.0.0.0', port=80)
-=======
-    app.run(host="0.0.0.0", port=80)
->>>>>>> 801f85ae08e3e19037d1b8930252f4468c707a9e
 
