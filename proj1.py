@@ -164,7 +164,7 @@ def equation():
     if passaRoupaBool:
         vezesPassaRoupa = float(request.form.get("vezesPassaRoupa"))
 
-    print(numeroLampada, tempoBanho)
+    print(numeroLamp, tempoBanho)
     
     motores_gasolina = {"1.0": 12.9,"1.4": 11.62,".1.6": 11.6, "2.0": 11.5} 
 
