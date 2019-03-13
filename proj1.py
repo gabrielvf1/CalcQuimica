@@ -200,9 +200,9 @@ def equation():
         emissao += (cozinha * (cozinhada[tipo_cozinha][0] * cozinhada[tipo_cozinha][1]))*(11/3) 
 
     if (tipoBanho == "eletrico"):
-        emissao += tempoBanho * banho_energia_eletric * constEletric
+        emissao += tempoBanho * constEletric
     elif (tipoBanho == 'gas'):
-        emissao += tempoBanho * banho_energia_gas * constEletric
+        emissao += tempoBanho  * constEletric
 
     emissao +=( (numeroGeladeira * geladeiraTipo[numeroPortaGeladeira]) +( numeroFreezer * 4)) * constEletric
 
