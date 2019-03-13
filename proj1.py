@@ -8,7 +8,7 @@ def hello():
     html = '''<form action="/" method="post">
                 <div class="Cozinha">
                     <p>Quantas vezes voce cozinha por dia:
-                    <input type="number" id="tentacles" name="cozinha" min="0" max="100">
+                    <input type="number" id="tentacles" name="cozinha" min="0" max="100" value="0">
                     </p>
 
                     <p>Qual metodo voce utiliza (Eletrico, Gas natural ou Gas GLP):
@@ -21,7 +21,7 @@ def hello():
                 </div>
                 <div class="Carro">
                     <label for="pwd">Quantos km voce anda?:</label>
-                   <input type="number" id="tentacles" name="km" min="0" max="100">
+                   <input type="number" id="tentacles" name="km" min="0" max="100" value="0" value="0">
                     <p>Meio de transporte:
                     <select class="form-control" id="sel2" name="transporte">
                         <option value="carro">Carro</option> 
@@ -50,11 +50,11 @@ def hello():
                 
                 <div class="banho">
                     <p>Quantos banhos voce toma por dia?:
-                    <input type="number" id="tentacles" name="banho" min="1" max="100">
+                    <input type="number" id="tentacles" name="banho" min="1" max="100" value="0">
                         
                     </p>
                     <p>Quantos tempo de banhos em minutos?:
-                    <input type="number" id="tentacles" name="tempoBanho" min="1" max="100">
+                    <input type="number" id="tentacles" name="tempoBanho" min="1" max="100" value="0">
                         
                     </p>
                      <p>Seu chuveiro e eletrico ou a gas?:
@@ -67,7 +67,7 @@ def hello():
                 </div>
                 <div class="Lampadas">
                     <p>Quantas lampadas ligadas voce tem em casa?:
-                    <input type="number" id="nLamp" name="numeroLampada" min="1" max="100">
+                    <input type="number" id="nLamp" name="numeroLampada" min="1" max="100" value="0">
                     </p>
                     <p>Quanto tempo, em media, por dia, elas ficam ligadas?:
                     <select class="form-control" id="sel3" name="tempoLampa">
@@ -97,7 +97,7 @@ def hello():
                 </div>
                  <div class="Eletrodomestico">
                     <p>Quantas geladeiras voce tem?:
-                    <input type="number" id="tentacles" name="numeroGeladeira" min="1" max="100">
+                    <input type="number" id="tentacles" name="numeroGeladeira" min="1" max="100" value="0">
                     </p>
                     <p>Quantas portas ?:
                     <select class="form-control" id="sel3" name="numeroPortaGeladeira">
@@ -106,10 +106,10 @@ def hello():
                     </select>
                     </p>
                     <p>Quantos freezers?:
-                    <input type="number" id="tentacles" name="numeroFreezer" min="1" max="100">
+                    <input type="number" id="tentacles" name="numeroFreezer" min="1" max="100" value="0">
                     </p>
                     <label for="pwd">Quantas vezes voce lava roupa por semana?:</label>
-                   <input type="number" id="tentacles" name="vezesLavaRoupa" min="1" max="100">
+                   <input type="number" id="tentacles" name="vezesLavaRoupa" min="1" max="100" value="0">
                     <p>Voce usa uma secadora?:
                     <select class="form-control" id="sel2" name="secadoraBool">
                         <option value="1">Sim</option> 
@@ -117,7 +117,7 @@ def hello():
                     </select>
                     </p>
                     <label for="pwd">Quantas vezes voce seca a roupa por semada?:</label>
-                    <input type="number" id="tentacles" name="vezesSecaRoupa" min="1" max="100">
+                    <input type="number" id="tentacles" name="vezesSecaRoupa" min="1" max="100" value="0">
                     <p>Voce usa uma ferro de passar roupa?:
 
                     <select class="form-control" id="sel2" name="passaRoupaBool">
@@ -126,7 +126,7 @@ def hello():
                         </select>
                     </p>
                     <label for="pwd">Quantas vezes voce usa o ferro de passar roupa por semana?:</label>
-                    <input type="number" id="tentacles" name="vezesPassaRoupa" min="1" max="100">
+                    <input type="number" id="tentacles" name="vezesPassaRoupa" min="1" max="100" value="0">
                         
                         
                     </select>
