@@ -135,7 +135,7 @@ def hello():
                     </p>
                     <label for="pwd">Quantos minutos voce seca a roupa?:</label>
                     <input type="text" class="form-control" id="pwd" name="vezesSecaRoupa">
-                    <p>Voce usa uma secadora?:
+                    <p>Voce usa uma ferro de passar roupa?:
 
                     <select class="form-control" id="sel2" name="passaRoupaBool">
                         <option value="1">Sim</option> 
