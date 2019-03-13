@@ -164,7 +164,7 @@ def equation():
     if passaRoupaBool:
         vezesPassaRoupa = float(request.form.get("vezesPassaRoupa"))
 
-
+    print(tempoLampada, tempoBanho)
     
     motores_gasolina = {"1.0": 12.9,"1.4": 11.62,".1.6": 11.6, "2.0": 11.5} 
 
@@ -218,7 +218,7 @@ def equation():
     else:
         emissao += (1.5 * vezesLavaRoupa) * constEletric
     
-    print(tempoLampada)
+    
     emissao += numeroLamp * lampadaEnerg[tipoLampada] * tempoLampada * constEletric
 
     return("{:.3f} kg de Co2 em 1 mes". format(emissao * 30))
