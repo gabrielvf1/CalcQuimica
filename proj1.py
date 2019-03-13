@@ -41,6 +41,7 @@ def hello():
                         <option value="1.4">1.4</option>
                         <option value="1.6">1.6</option>
                         <option value="2.0">2.0</option>
+                        <option value="onibus">Onibus</option> 
                     </select>
                     </p>
                     <p>Gasolina ou alcool?:
@@ -197,10 +198,10 @@ def equation():
 
     emissao = 0
 
-    if (meio == "carro" and combustivel == 'alcool'):
+    if (meio == "carro" and combustivel == 'alcool' and combustivel =!'onibus'):
         emissao += ((0.1029) * (km / ((motores_gasolina[motor]) * (11/3)))) 
     
-    elif (meio == "carro"):
+    elif (meio == "carro" and combustivel =!'onibuss'):
         emissao += ((0.4673625 + 0.1029) * (km / ((motores_gasolina[motor])* (11/3)))) 
 
     elif (meio == 'onibus'):
