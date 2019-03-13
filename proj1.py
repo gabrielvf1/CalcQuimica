@@ -36,7 +36,7 @@ def hello():
                         <option value="1.4">1.4</option>
                         <option value="1.6">1.6</option>
                         <option value="2.0">2.0</option>
-                        <option value="onibus">Onibus</option> 
+                        <option value="onibus">Nenhum</option> 
                     </select>
                     </p>
                     <p>Gasolina ou alcool?:
