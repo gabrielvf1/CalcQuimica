@@ -8,12 +8,7 @@ def hello():
     html = '''<form action="/" method="post">
                 <div class="Cozinha">
                     <p>Quantas vezes voce cozinha por dia:
-                     <select  name="cozinha">
-                        <option value="1">1</option> 
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                    </select>
+                    <input type="number" id="tentacles" name="cozinha" min="1" max="100">
                     </p>
 
                     <p>Qual metodo voce utiliza (Eletrico, Gas natural ou Gas GLP):
