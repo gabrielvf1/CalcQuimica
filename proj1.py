@@ -116,7 +116,7 @@ def hello():
                         <option value="0">Nao</option>
                     </select>
                     </p>
-                    <label for="pwd">Quantos minutos voce seca a roupa?:</label>
+                    <label for="pwd">Quantas vezes voce seca a roupa por semada?:</label>
                     <input type="number" id="tentacles" name="vezesSecaRoupa" min="1" max="100">
                     <p>Voce usa uma ferro de passar roupa?:
 
@@ -207,16 +207,16 @@ def equation():
     emissao +=( (numeroGeladeira * geladeiraTipo[numeroPortaGeladeira]) +( numeroFreezer * 4)) * constEletric
 
     if (secadoraBool and passaRoupaBool):
-        emissao += (1.5 * vezesLavaRoupa + 3.5 * vezesSecaRoupa + (vezesPassaRoupa)/7 * 0.0166) * constEletric
+        emissao += (1.5 * vezesLavaRoupa/7 + 3.5 * vezesSecaRoupa/7 + (vezesPassaRoupa)/7 * 0.0166) * constEletric
 
     elif (secadoraBool and not passaRoupaBool):
-        emissao += (1.5 * vezesLavaRoupa + 3.5 * vezesSecaRoupa)  * constEletric
+        emissao += (1.5 * vezesLavaRoupa/7 + 3.5 * vezesSecaRoupa/7)  * constEletric
 
     elif (not secadoraBool and passaRoupaBool):
-        emissao += (1.5 * vezesLavaRoupa + (vezesPassaRoupa)/7 * 0.0166) * constEletric
+        emissao += (1.5 * vezesLavaRoupa/7 + (vezesPassaRoupa)/7 * 0.0166) * constEletric
 
     else:
-        emissao += (1.5 * vezesLavaRoupa) * constEletric
+        emissao += (1.5 * vezesLavaRoupa/7) * constEletric
     
     
     emissao += numeroLamp * lampadaEnerg[tipoLampada] * tempoLampada * constEletric
