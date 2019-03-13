@@ -207,13 +207,13 @@ def equation():
     emissao +=( (numeroGeladeira * geladeiraTipo[numeroPortaGeladeira]) +( numeroFreezer * 4)) * constEletric
 
     if (secadoraBool and passaRoupaBool):
-        emissao += (1.5 * vezesLavaRoupa/7 + 3.5 * vezesSecaRoupa/7 + (vezesPassaRoupa)/7 * 0.0166) * constEletric
+        emissao += (1.5 * vezesLavaRoupa/7 + 3.5 * vezesSecaRoupa/7 + (((vezesPassaRoupa)/7 * 0.0166) * 30)) * constEletric
 
     elif (secadoraBool and not passaRoupaBool):
         emissao += (1.5 * vezesLavaRoupa/7 + 3.5 * vezesSecaRoupa/7)  * constEletric
 
     elif (not secadoraBool and passaRoupaBool):
-        emissao += (1.5 * vezesLavaRoupa/7 + (vezesPassaRoupa)/7 * 0.0166) * constEletric
+        emissao += (1.5 * vezesLavaRoupa/7 + (((vezesPassaRoupa)/7 * 0.0166) * 30)) * constEletric
 
     else:
         emissao += (1.5 * vezesLavaRoupa/7) * constEletric
