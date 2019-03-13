@@ -198,10 +198,10 @@ def equation():
 
     emissao = 0
 
-    if (meio == "carro" and combustivel == 'alcool' and combustivel =!'onibus'):
+    if (meio == "carro" and combustivel == 'alcool' and combustivel !='onibus'):
         emissao += ((0.1029) * (km / ((motores_gasolina[motor]) * (11/3)))) 
     
-    elif (meio == "carro" and combustivel =!'onibuss'):
+    elif (meio == "carro" and combustivel !='onibuss'):
         emissao += ((0.4673625 + 0.1029) * (km / ((motores_gasolina[motor])* (11/3)))) 
 
     elif (meio == 'onibus'):
