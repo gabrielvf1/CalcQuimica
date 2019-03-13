@@ -67,10 +67,10 @@ def hello():
                 </div>
                 <div class="Lampadas">
                     <p>Quantas lampadas ligadas voce tem em casa?:
-                    <input type="number" id="tentacles" name="numeroLampada" min="1" max="100">
+                    <input type="number" id="nLamp" name="numeroLampada" min="1" max="100">
                     </p>
                     <p>Quanto tempo, em media, por dia, elas ficam ligadas?:
-                    <select class="form-control" id="sel3" name="tempoLamp">
+                    <select class="form-control" id="sel3" name="tempoLampa">
                         <option value="1">1 hr</option> 
                         <option value="2">2 hr</option>
                         <option value="3">3 hr</option>
@@ -152,7 +152,7 @@ def equation():
     tipoBanho = request.form.get("tipoBanho")
     numeroLamp = int(request.form.get("numeroLampada"))
     tipoLampada = request.form.get("tipoLampada")
-    tempoLampada = float(request.form.get("tempoLamp"))
+    tempoLampada = float(request.form.get("tempoLampa"))
     numeroGeladeira =  float(request.form.get("numeroGeladeira"))
     numeroPortaGeladeira = request.form.get("numeroPortaGeladeira")
     numeroFreezer = float(request.form.get("numeroFreezer"))
