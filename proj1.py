@@ -150,7 +150,7 @@ def equation():
     banho =  float(request.form.get("banho"))
     tempoBanho = float(request.form.get("tempoBanho"))
     tipoBanho = request.form.get("tipoBanho")
-    numeroLamp = float(request.form.get("numeroLamp"))
+    numeroLamp = int(request.form.get("numeroLamp"))
     tipoLampada = request.form.get("tipoLampada")
     tempoLampada = float(request.form.get("tempoLamp"))
     numeroGeladeira =  float(request.form.get("numeroGeladeira"))
