@@ -124,17 +124,21 @@ def hello():
                         <option value="3">3</option>
                     </select>
                     </p>
-                     <label for="pwd">Quantas vezes voce lava roupa por semana?:</label>
+                    <label for="pwd">Quantas vezes voce lava roupa por semana?:</label>
                     <input type="text" class="form-control" id="pwd" name="vezesLavaRoupa">
                     <p>Voce usa uma secadora?:
                     <select class="form-control" id="sel2" name="secadoraBool">
                         <option value="1">Sim</option> 
                         <option value="0">Nao</option>
+                    </select>
+                    </p>
                     <label for="pwd">Quantos minutos voce seca a roupa?:</label>
                     <input type="text" class="form-control" id="pwd" name="vezesSecaRoupa">
                     <select class="form-control" id="sel2" name="passaRoupaBool">
                         <option value="1">Sim</option> 
                         <option value="0">Nao</option>
+                        </select>
+                    </p>
                     <label for="pwd">Quantos minutos voce usa o ferro de passar roupa?:</label>
                     <input type="text" class="form-control" id="pwd" name="vezesPassaRoupa">
                         
@@ -235,5 +239,5 @@ def equation():
     
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
 
