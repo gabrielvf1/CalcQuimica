@@ -188,7 +188,7 @@ def equation():
         emissao += ((0.4673625 + 0.1029) * (km / ((motores_gasolina[motor])* (11/3)))) 
 
     elif (meio == 'onibus'):
-        emissao += (0.73008 * (km / (144/(11/3)))) 
+        emissao += (0.73008 * (km / (70/(11/3)))) 
     
     if (tipo_cozinha == 'eletrico'):
         emissao += cozinha/2 * (cozinhada[tipo_cozinha][0] * cozinhada[tipo_cozinha][1]) 
@@ -218,7 +218,7 @@ def equation():
     else:
         emissao += (1.5 * vezesLavaRoupa) * constEletric
     
-
+    print(tempoLampada)
     emissao += numeroLamp * lampadaEnerg[tipoLampada] * tempoLampada * constEletric
 
     return("{:.3f} kg de Co2 em 1 mes". format(emissao * 30))
